@@ -12,6 +12,7 @@ package universidad;
 public class Curso {
     private int nrc; 
     private Profesor profesor;
+    private Estudiante estudiantes;
     
     public Curso(int nrc) {
         this.nrc = nrc;
@@ -27,6 +28,16 @@ public class Curso {
         }
     }
 
+    public Estudiante getEstudiantes() {
+        return estudiantes;
+    }
+
+    public void setEstudiantes(Estudiante estudiantes) {
+        if (this.estudiantes == null) {
+            this.estudiantes = estudiantes;
+        }
+    }
+    
     public int getNrc() {
         return nrc;
     }

@@ -12,14 +12,20 @@ import java.util.ArrayList;
  * @author jdovalle
  */
 public class Estudiante {
-    ArrayList<Estudiante> estudiantes;
+    ArrayList<Curso> cursos;
      int id;
      String nombre;
      
     public Estudiante(int id) {
         this.id = id;
-        estudiantes = new ArrayList(); 
+        cursos = new ArrayList(); 
     }
-     
+      public boolean agregarCurso(Curso curso){
+         if (cursos.size() < 10) {
+             cursos.add(curso);
+             return true;
+         }
+         return false;
+     }
     
 }
