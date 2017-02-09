@@ -5,10 +5,21 @@
  */
 package universidad;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jdovalle
  */
 public class Estudiante {
+    ArrayList<Estudiante> estudiantes;
+     int id;
+     String nombre;
+     
+    public Estudiante(int id) {
+        this.id = id;
+        estudiantes = new ArrayList(); 
+    }
+     
     
 }
